@@ -2,3 +2,4 @@
 .DS_Store
 .python-version
 bert_results/model
+__pycache__
