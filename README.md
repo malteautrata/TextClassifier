@@ -12,3 +12,12 @@ Different models for text classification of German newspaper articles
 * Testaccuracy: 90.27%, took 0.7174 minutes
 * Testaccuracy distribution:
 * ![Test distribtuon](bert_results/metrics/test_evaluation.png)
+
+### T5 Encoder Metrics:
+* lr = 2e-6
+* batch_size = 16
+* loss logged every 50 steps
+* eval accuracy logged every 200
+* ![Training metrics](t5_results/encoder/metrics/graph_20_epochs.png)
+
+### T5 Metrics:
