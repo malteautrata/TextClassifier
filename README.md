@@ -1,2 +1,14 @@
 # TextClassifier
 Different models for text classification of German newspaper articles
+
+### Bert Metrics:
+* lr = 2e-7, gradient_clip = True
+* 10% dropout
+* batch size: 8
+* loss logged every 50 steps
+* eval accuracy logged every 200
+* duration 448.15 minutes
+* ![Training metrics](bert_results/metrics/graph_20_epochs.png)
+* Testaccuracy: 90.27%, took 0.7174 minutes
+* Testaccuracy distribution:
+* ![Test distribtuon](bert_results/metrics/test_evaluation.png)
