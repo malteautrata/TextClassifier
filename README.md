@@ -1,6 +1,8 @@
 # TextClassifier
 Different models for text classification of German newspaper articles
 
+Dataset: https://tblock.github.io/10kGNAD/
+
 ### Bert Metrics:
 * lr = 2e-7, gradient_clip = True
 * 10% dropout
@@ -25,7 +27,7 @@ Different models for text classification of German newspaper articles
 * epoch 0-9: lr = 2e-5
 * epoch 9-14: lr = 2e-6
 * loss logged every 50 steps
-* eval accuracy logged ever 50 steps
+* eval accuracy logged ever 200 steps
 * duration: 152.26 minutes
 * ![Training metrics](t5_results/transformer/metrics/graph_15_epochs.png)
 * Testaccuracy: 88.72%, took 0.38 minutes
