@@ -29,4 +29,5 @@ Different models for text classification of German newspaper articles
 * duration: 152.26 minutes
 * ![Training metrics](t5_results/transformer/metrics/graph_15_epochs.png)
 * Testaccuracy: 88.72%, took 0.38 minutes
+* Testaccuracy distribution:
 * ![Test distribtuon](t5_results/transformer/metrics/test_evaluation.png)
