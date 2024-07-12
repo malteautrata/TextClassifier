@@ -17,10 +17,16 @@ Dataset: https://tblock.github.io/10kGNAD/
 
 ### T5 Encoder Metrics:
 * lr = 2e-6
-* batch_size = 16
+* batch_size = 8
 * loss logged every 50 steps
 * eval accuracy logged every 200
-* ![Training metrics](t5_results/encoder/metrics/graph_20_epochs.png)
+* duration: 
+* ![Training metrics](t5_results/encoder/metrics/graph_10_epochs.png)
+* seems to overfit
+* Testaccuracy: 90.27%, took 1.00 minute
+* Testaccuracy distribution:
+* ![Test distribtuon](t5_results/encoder/metrics/test_evaluation.png)
+
 
 ### T5 Metrics:
 * batch size = 8
