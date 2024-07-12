@@ -21,3 +21,12 @@ Different models for text classification of German newspaper articles
 * ![Training metrics](t5_results/encoder/metrics/graph_20_epochs.png)
 
 ### T5 Metrics:
+* batch size = 8
+* epoch 0-9: lr = 2e-5
+* epoch 9-14: lr = 2e-6
+* loss logged every 50 steps
+* eval accuracy logged ever 50 steps
+* duration: 152.26 minutes
+* ![Training metrics](t5_results/transformer/metrics/graph_15_epochs.png)
+* Testaccuracy: 88.72%, took 0.38 minutes
+* ![Test distribtuon](t5_results/transformer/metrics/test_evaluation.png)
