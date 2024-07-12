@@ -20,7 +20,7 @@ Dataset: https://tblock.github.io/10kGNAD/
 * batch_size = 8
 * loss logged every 50 steps
 * eval accuracy logged every 200
-* duration: 
+* duration: 258.08 minutes
 * ![Training metrics](t5_results/encoder/metrics/graph_10_epochs.png)
 * seems to overfit
 * Testaccuracy: 90.27%, took 1.00 minute
