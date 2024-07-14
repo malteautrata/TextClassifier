@@ -4,3 +4,4 @@
 bert_results/model
 __pycache__
 *.pt
+*.nosync
