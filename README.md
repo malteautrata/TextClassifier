@@ -45,3 +45,10 @@ Dataset: https://tblock.github.io/10kGNAD/
 * ![Test distribtuon](results/t5_results/transformer/metrics/test_evaluation.png)
 * Confusion matrix:
 * ![Confusion matrix](results/t5_results/transformer/metrics/confusion_matrix.png)
+
+### Llama 3 instruct:
+* batch size = 4
+* lr = 2.0e-5
+* loss logged every 100 steps
+* 1 epoch
+* ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
