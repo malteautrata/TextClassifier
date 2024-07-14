@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/Scripts/__init__.py
+src/Scripts/load_dataset.py
+src/Scripts/models.py
+src/Textclassifier.egg-info/PKG-INFO
+src/Textclassifier.egg-info/SOURCES.txt
+src/Textclassifier.egg-info/dependency_links.txt
+src/Textclassifier.egg-info/top_level.txt
