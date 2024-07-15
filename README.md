@@ -51,9 +51,19 @@ Dataset: https://tblock.github.io/10kGNAD/
 * lr = 2.0e-5
 * loss logged every 100 steps
 * 1 epoch
+* duration: 370 minutes
 * ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
 * Testaccuracy: 87.94%, took 27 minutes (53 minutes on mac)
 * Testaccuracy distribution:
 * ![Test distribtuon](results/llama3_results/instruct/metrics/test_evaluation.png)
 * Confusion matrix:
 * ![Confusion matrix](results/llama3_results/instruct/metrics/confusion_matrix.png)
+
+### Llama 3 Classification head:
+* batch size = 8
+* lr = 2.0e-6
+* loss logged every 100 steps
+* 2.5 epochs
+* duration: 19.84 hours
+* ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
+
