@@ -52,3 +52,8 @@ Dataset: https://tblock.github.io/10kGNAD/
 * loss logged every 100 steps
 * 1 epoch
 * ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
+* Testaccuracy: 87.94%, took 27 minutes (53 minutes on mac)
+* Testaccuracy distribution:
+* ![Test distribtuon](results/llama3_results/instruct/metrics/test_evaluation.png)
+* Confusion matrix:
+* ![Confusion matrix](results/llama3_results/instruct/metrics/confusion_matrix.png)
