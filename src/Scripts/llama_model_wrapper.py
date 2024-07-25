@@ -3,7 +3,7 @@ from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
 )
-import torch
+from Scripts.load_dataset import label_to_id
 
 
 class InstructModelWrapper:
@@ -91,27 +91,14 @@ class HeadClassifierWrapper:
             else None,  # set to False as we're going to use gradient checkpointing
         )
         self.tokenizer = AutoTokenizer.from_pretrained(model_kwargs["tokenizer_path"])
-
         if self.tokenizer.pad_token_id is None:
             self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
             self.tokenizer.pad_token = self.tokenizer.eos_token
 
-    def remove_answer(self, sample: dict):
-        chat_template = sample["chat_template"]
-        substring_index = chat_template.index(
-            "<|start_header_id|>assistant<|end_header_id|>\n\n"
+    def tokenize_text(self, sample):
+        return self.tokenizer(
+            sample["text"], max_length=1500, truncation=True, padding=True
         )
-        return {"new_template": chat_template[0 : substring_index - len(chat_template)]}
 
-    def tokenize(self, sample: dict):
-        return self.tokenizer(sample["new_template"], max_length=1512, truncation=True)
-
-    def tokenize_messages(self, sample: dict) -> dict:
-        return {
-            "input_ids": self.tokenizer.apply_chat_template(
-                sample["messages"],
-                tokenize=True,
-                add_generation_prompt=False,
-                return_tensors="pt",
-            )
-        }
+    def add_label_id(self, example):
+        return {"label": label_to_id[example["label"]]}
