@@ -61,9 +61,9 @@ Dataset: https://tblock.github.io/10kGNAD/
 
 ### Llama 3 Classification head:
 * batch size = 8
-* lr = 2.0e-6
-* loss logged every 100 steps
-* 2.5 epochs
-* duration: 19.84 hours
-* ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
+* lr = 1e-4
+* steps 0-1200: no weight decay
+* steps 1200-300: weight decay of 0.01
+* duration: 37.25 hours hours
+* ![Training metrics](results/llama3_results/classification_head/metrics/training_loss.png)
 
