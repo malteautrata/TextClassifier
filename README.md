@@ -66,4 +66,6 @@ Dataset: https://tblock.github.io/10kGNAD/
 * steps 1200-300: weight decay of 0.01
 * duration: 37.25 hours hours
 * ![Training metrics](results/llama3_results/classification_head/metrics/training_loss.png)
+* ![Training metrics](results/llama3_results/classification_head/metrics/training_accuracy.png)
+
 
