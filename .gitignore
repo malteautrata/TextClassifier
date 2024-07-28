@@ -4,3 +4,5 @@
 bert_results/model
 __pycache__
 *.pt
+*.nosync
+src/Notebooks/Llama3_classifiers/datasets
