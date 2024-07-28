@@ -51,21 +51,26 @@ Dataset: https://tblock.github.io/10kGNAD/
 * lr = 2.0e-5
 * loss logged every 100 steps
 * 1 epoch
-* duration: 370 minutes
+* duration: 370 minutes (6.17 hours)
 * ![Training metrics](results/llama3_results/instruct/metrics/graph_1_epoch.png)
-* Testaccuracy: 87.94%, took 27 minutes (53 minutes on mac)
+* Testaccuracy: 87.94%, took 27 minutes
 * Testaccuracy distribution:
 * ![Test distribtuon](results/llama3_results/instruct/metrics/test_evaluation.png)
 * Confusion matrix:
 * ![Confusion matrix](results/llama3_results/instruct/metrics/confusion_matrix.png)
 
 ### Llama 3 Classification head:
-* batch size = 8
-* lr = 1e-4
-* steps 0-1200: no weight decay
-* steps 1200-300: weight decay of 0.01
-* duration: 37.25 hours hours
+* batch size = 4
+* steps 0-1200: no weight decay, lr = 1e-4
+* steps 1200-3000: weight decay = 0.01, lr = 1e-4
+* steps 3000-4300: weight decay = 0.01, lr = 1e-5
+* duration: 53.05 hours hours
 * ![Training metrics](results/llama3_results/classification_head/metrics/training_loss.png)
 * ![Training metrics](results/llama3_results/classification_head/metrics/training_accuracy.png)
-
-
+* Testset evaluation duration: 31 minutes
+* Testaccuracy: 92.32%
+* F1-Score: 92.28%
+* Testaccuracy distribution:
+* ![Training metrics](results/llama3_results/classification_head/metrics/test_evaluation.png)
+* Confusion matrix:
+* ![Training metrics](results/llama3_results/classification_head/metrics/confusion_matrix.png)
