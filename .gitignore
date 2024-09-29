@@ -1,8 +1,7 @@
-.venv.nosync
 .DS_Store
-.python-version
-bert_results/model
 __pycache__
 *.pt
 *.nosync
 src/Notebooks/Llama3_classifiers/datasets
+.vscode/settings.json
+.vscode/settings.json
