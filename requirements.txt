@@ -13,9 +13,11 @@ Babel==2.15.0
 beautifulsoup4==4.12.3
 bitsandbytes==0.42.0
 bleach==6.1.0
+blinker==1.8.2
 certifi==2024.7.4
 cffi==1.16.0
 charset-normalizer==3.3.2
+click==8.1.7
 comm==0.2.2
 contourpy==1.2.1
 cycler==0.12.1
@@ -29,6 +31,8 @@ evaluate==0.4.2
 executing==2.0.1
 fastjsonschema==2.20.0
 filelock==3.15.4
+flasgger==0.9.7.1
+Flask==3.0.3
 fonttools==4.53.1
 fqdn==1.5.1
 frozenlist==1.4.1
@@ -42,6 +46,7 @@ ipykernel==6.29.5
 ipython==8.26.0
 ipywidgets==8.1.3
 isoduration==20.11.0
+itsdangerous==2.2.0
 jedi==0.19.1
 Jinja2==3.1.4
 joblib==1.4.2
@@ -129,7 +134,7 @@ soupsieve==2.5
 stack-data==0.6.3
 sympy==1.13.0
 terminado==0.18.1
--e git+https://github.com/malteautrata/TextClassifier.git@fa7b48177a06b0350440eeacf8600fd48a686497#egg=Textclassifier
+-e git+https://github.com/malteautrata/TextClassifier.git@adcde6fc453765c943f06d96b6710ff17c1ae4ec#egg=Textclassifier
 threadpoolctl==3.5.0
 tinycss2==1.3.0
 tokenizers==0.15.2
@@ -152,6 +157,7 @@ wcwidth==0.2.13
 webcolors==24.6.0
 webencodings==0.5.1
 websocket-client==1.8.0
+Werkzeug==3.0.4
 widgetsnbextension==4.0.11
 xxhash==3.4.1
 yarl==1.9.4

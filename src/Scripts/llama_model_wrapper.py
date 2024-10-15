@@ -3,8 +3,7 @@ from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
 )
-from Scripts.load_dataset import label_to_id
-
+from scripts.load_dataset import label_to_id
 
 class InstructModelWrapper:
     def __init__(self, **model_kwargs) -> None:
