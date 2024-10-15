@@ -3,6 +3,18 @@ Different models for text classification of German newspaper articles
 
 Dataset: https://tblock.github.io/10kGNAD/
 
+## Results
+#### T5 Base:
+![alt text](images/t5_base_results.png)
+#### T5 Encoder:
+![alt text](images/t5_encoder_results.png)
+#### BERT:
+![alt text](images/bert_results.png)
+#### Llama 3 Instruc:
+![alt text](images/llama_instruct_results.png)
+#### Llama 3 Classification Head:
+![alt text](images/llama_classification_head_results.png)
+
 ## How to use
 #### To start the classification_api.py follow these steps:
 1. Move all trained models in the correct directory (e.g. ./results/bert_result/model.nosync)
